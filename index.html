@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portafolio profesional de Emanuel, Coordinador de Operaciones y Junior Data Analyst.">
+<title>Emanuel | Operations × Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#inicio" class="logo"><span class="logo-dot"></span>Emanuel</a>
+  <button class="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav>
+    <a href="#historia">Historia</a>
+    <a href="#skills">Skills</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">OPERATIONS × DATA ANALYSIS</p>
+    <h1>Datos con<br><em>sentido de negocio.</em></h1>
+    <p class="intro">Soy Emanuel, profesional de operaciones en evolución hacia el análisis de datos. Combino experiencia operativa con Python, SQL y Excel para convertir información en decisiones claras.</p>
+    <div class="actions">
+      <a class="btn primary" href="#proyectos">Explorar proyectos <span>↗</span></a>
+      <a class="btn ghost" href="#contacto">Hablemos</a>
+    </div>
+    <div class="micro-stats">
+      <div><b>4+</b><span>Años en operaciones</span></div>
+      <div><b>600</b><span>Registros analizados</span></div>
+      <div><b>SQL</b><span>En aprendizaje activo</span></div>
+    </div>
+  </div>
+
+  <div class="hero-art reveal delay">
+    <div class="blob blob-a"></div><div class="blob blob-b"></div>
+    <div class="recipe-card">
+      <div class="recipe-top"><span>DATA RECIPE</span><span>01</span></div>
+      <h3>Business Insight</h3>
+      <div class="ingredient"><span>01</span><b>Pregunta</b><small>¿Qué queremos saber?</small></div>
+      <div class="ingredient"><span>02</span><b>Datos</b><small>Limpiar · explorar · validar</small></div>
+      <div class="ingredient"><span>03</span><b>Insight</b><small>Explicar · visualizar · decidir</small></div>
+      <div class="stamp">BAKED<br><strong>WITH DATA</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="story section" id="historia">
+  <div class="section-title reveal"><p class="eyebrow">01 · MI HISTORIA</p><h2>De la operación<br><em>a los datos.</em></h2></div>
+  <div class="timeline reveal">
+    <article><span class="year">01</span><div><h3>Operaciones</h3><p>Experiencia coordinando procesos y trabajando con equipos orientados a resultados.</p></div></article>
+    <article><span class="year">02</span><div><h3>Servicio & gestión</h3><p>Experiencia en SAC, PQR, telecomunicaciones y contact center, entendiendo al cliente desde la operación.</p></div></article>
+    <article><span class="year">03</span><div><h3>Data Analytics</h3><p>Una nueva capa profesional: Python, Pandas, SQL, Excel y visualización para analizar lo que ocurre detrás de los resultados.</p></div></article>
+  </div>
+  <div class="quote reveal">“No se trata solo de encontrar un número. Se trata de entender qué significa.”</div>
+</section>
+
+<section class="skills section" id="skills">
+  <div class="section-title centered reveal"><p class="eyebrow">02 · HERRAMIENTAS</p><h2>Mi caja de<br><em>herramientas.</em></h2></div>
+  <div class="skill-grid">
+    <article class="skill-card reveal"><div class="icon">Py</div><h3>Python</h3><p>Exploración, limpieza y análisis de datos.</p><div class="chips"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div></article>
+    <article class="skill-card reveal"><div class="icon">SQL</div><h3>SQL</h3><p>Consultas, filtros, agregaciones y relaciones.</p><div class="chips"><span>SELECT</span><span>JOIN</span><span>GROUP BY</span></div></article>
+    <article class="skill-card reveal"><div class="icon">X</div><h3>Excel</h3><p>Organización, métricas y visualización para reporting.</p><div class="chips"><span>Fórmulas</span><span>Charts</span><span>KPIs</span></div></article>
+    <article class="skill-card reveal"><div class="icon">↗</div><h3>Business thinking</h3><p>Conectar resultados técnicos con preguntas de negocio.</p><div class="chips"><span>Insights</span><span>EDA</span><span>Decisions</span></div></article>
+  </div>
+</section>
+
+<section class="projects section" id="proyectos">
+  <div class="section-title reveal"><p class="eyebrow">03 · PROYECTOS</p><h2>Lo que estoy<br><em>construyendo.</em></h2></div>
+  <div class="project-grid">
+
+    <article class="project featured reveal">
+      <div class="project-visual sales">
+        <span class="visual-label">SALES DATA ANALYSIS</span>
+        <div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <strong>$1.46M</strong>
+      </div>
+      <div class="project-content">
+        <small>PYTHON · PANDAS · MATPLOTLIB</small>
+        <h3>Sales Data Analysis</h3>
+        <p>600 registros de ventas analizados para identificar desempeño por producto, ciudad y comportamiento mensual.</p>
+        <div class="chips"><span>Data Cleaning</span><span>EDA</span><span>Visualization</span></div>
+        <a href="#" class="case-link placeholder">Caso de estudio ↗</a>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-visual sql"><span class="code">SELECT <b>product</b>,<br>SUM(revenue)<br>FROM sales<br>GROUP BY product;</span></div>
+      <div class="project-content">
+        <small>SQL · SQLITE</small><h3>Business Queries</h3>
+        <p>Práctica de consultas orientadas a preguntas comerciales y relaciones entre tablas.</p>
+        <div class="chips"><span>JOIN</span><span>WHERE</span><span>Aggregations</span></div>
+        <a href="#" class="case-link placeholder">Caso de estudio ↗</a>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-visual bakery"><span>Panadería</span><div class="pie"></div><div class="pie two"></div></div>
+      <div class="project-content">
+        <small>DATABASE · SQL</small><h3>Bakery Database</h3>
+        <p>Diseño de una base de datos para una panadería, conectando productos, pedidos y operaciones.</p>
+        <div class="chips"><span>SQLite</span><span>Tables</span><span>Relations</span></div>
+        <a href="#" class="case-link placeholder">Caso de estudio ↗</a>
+      </div>
+    </article>
+
+    <article class="project reveal">
+      <div class="project-visual excel"><span class="cell">KPI</span><span class="cell">SALES</span><span class="cell">2026</span><span class="cell">+24%</span></div>
+      <div class="project-content">
+        <small>EXCEL · REPORTING</small><h3>Business Dashboard</h3>
+        <p>Exploración de métricas y creación de visualizaciones orientadas a comunicación ejecutiva.</p>
+        <div class="chips"><span>KPI</span><span>Charts</span><span>Reporting</span></div>
+        <a href="#" class="case-link placeholder">Caso de estudio ↗</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="philosophy section reveal">
+  <div class="recipe-note">
+    <span class="eyebrow">04 · MI FORMA DE TRABAJAR</span>
+    <h2>Una buena receta<br><em>empieza con una buena pregunta.</em></h2>
+    <p>Preguntar → limpiar → explorar → encontrar → comunicar.</p>
+  </div>
+</section>
+
+<section class="contact section" id="contacto">
+  <div class="contact-box reveal">
+    <div><p class="eyebrow">05 · CONTACTO</p><h2>¿Hacemos algo<br><em>con esos datos?</em></h2><p>Disponible para oportunidades, proyectos y conversaciones sobre análisis de datos y operaciones.</p></div>
+    <div class="contact-links">
+      <a href="mailto:TU_CORREO@ejemplo.com"><span>EMAIL</span><b>TU_CORREO@ejemplo.com</b>↗</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LINKEDIN</span><b>Perfil profesional</b>↗</a>
+      <a href="https://github.com/" target="_blank" rel="noopener"><span>GITHUB</span><b>Proyectos y código</b>↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><span>© 2026 Emanuel</span><span>Operations × Data</span><a href="#inicio">↑ Arriba</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
