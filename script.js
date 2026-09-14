@@ -1,3 +1,17 @@
+// --- Control de inicio en el Top (Evitar aterrizaje abajo) ---
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+});
+
+// --- Lógica original de Morgan (Intacta) ---
 const nav = document.querySelector(".nav");
 const menu = document.querySelector(".menu");
 const navLinks = document.querySelector("nav");
