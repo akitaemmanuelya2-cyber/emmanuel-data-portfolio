@@ -1,15 +1,27 @@
-// --- Control de inicio en el Top (Evitar aterrizaje abajo) ---
+// --- Control estricto de inicio en Top (Mobile & Desktop) ---
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-window.addEventListener('beforeunload', () => {
-  window.scrollTo(0, 0);
+const forzarTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  if (document.documentElement) document.documentElement.scrollTop = 0;
+  if (document.body) document.body.scrollTop = 0;
+};
+
+// Ejecución inmediata
+forzarTop();
+
+// Ejecución cuando el DOM esté listo y cuando la página termine de renderizar assets
+window.addEventListener('DOMContentLoaded', forzarTop);
+window.addEventListener('load', () => {
+  forzarTop();
+  // Retardo táctico para contrarrestar el recalculo de viewport en navegadores móviles
+  setTimeout(forzarTop, 50);
+  setTimeout(forzarTop, 150);
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-});
+window.addEventListener('beforeunload', forzarTop);
 
 // --- Lógica original de Morgan (Intacta) ---
 const nav = document.querySelector(".nav");
